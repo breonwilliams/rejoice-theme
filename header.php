@@ -110,10 +110,10 @@
 					<div class="container">
 						<div class="row">
 						<nav id='cssmenu' role="affix">
-							<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
+							<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
 								<div class="logo">
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-										<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+										<img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 									</a>
 								</div>
 							<?php else : ?>
