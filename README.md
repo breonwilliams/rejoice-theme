@@ -1,1 +1,1 @@
-# rejoice-theme
+# everypraise-theme
