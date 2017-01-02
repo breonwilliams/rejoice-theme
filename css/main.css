@@ -729,11 +729,14 @@ Header
 
 .header-mid-area {
 	/*padding: 15px 0;*/
-	background: #fff;
 }
 
 .header-mid-area .logo img {
 	max-height: 101px;
+}
+
+#site-header {
+	background: #CD1736;
 }
 
 .header-top-area{

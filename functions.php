@@ -73,6 +73,24 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
 	function bootstrapBasicWidgetsInit() 
 	{
 		register_sidebar(array(
+			'name'          => __('Top Header Left', 'bootstrap-basic'),
+			'id'            => 'topheader-left',
+			'before_widget' => '<div id="%1$s" class="widget header-top-left %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => '',
+		));
+
+		register_sidebar(array(
+			'name'          => __('Top Header Right', 'bootstrap-basic'),
+			'id'            => 'topheader-right',
+			'before_widget' => '<div id="%1$s" class="widget header-top-right text-right %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => '',
+		));
+
+		register_sidebar(array(
 			'name'          => __('Header left', 'bootstrap-basic'),
 			'id'            => 'header-left',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',

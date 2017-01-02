@@ -33,10 +33,61 @@
 		
 			<?php do_action('before'); ?>
 		<header id="site-header" role="banner">
+			<div class="header-top-area">
+				<div class="container">
+					<div class="row">
+						<!-- header-top-left start -->
+						<div class="col-xs-6">
+							<div class="header-top-left">
+								<?php if (is_active_sidebar('topheader-left')) { ?>
+									<div class="pull-left">
+										<?php dynamic_sidebar('topheader-left'); ?>
+									</div>
+									<div class="clearfix"></div>
+								<?php } // endif; ?>
+							</div>
+						</div>
+						<!-- header-top-left end -->
+						<!-- header-top-right start -->
+						<div class="col-xs-6">
+							<?php if (is_active_sidebar('topheader-right')) { ?>
+								<div class="pull-right">
+									<?php dynamic_sidebar('topheader-right'); ?>
+								</div>
+								<div class="clearfix"></div>
+							<?php } // endif; ?>
+
+						</div>
+						<!-- header-top-right end -->
+					</div>
+				</div>
+			</div>
 			<div class="header-mid-area">
 				<div class="container">
 					<div class="row row-with-vspace site-branding">
 						<div class="col-xs-6 site-title">
+							<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
+								<div class="logo">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+
+										<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+
+									</a>
+								</div>
+							<?php else : ?>
+
+								<h1 class="site-title-heading">
+									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+								</h1>
+
+							<?php endif; ?>
+
+							<div class="site-description">
+								<small>
+									<?php bloginfo('description'); ?>
+								</small>
+							</div>
+
 							<?php if (is_active_sidebar('header-left')) { ?>
 								<div class="pull-left">
 									<?php dynamic_sidebar('header-left'); ?>
