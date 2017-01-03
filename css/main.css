@@ -2236,12 +2236,6 @@ Form
 .widget_archive ul li {
 	padding-left: 27px;
 }
-.widget_categories ul li:before,
-.widget_archive ul li:before {
-	content: '\e888';
-	left: 1px;
-	font-size: 12px;
-}
 
 
 /* Form Filter Dropdown */
