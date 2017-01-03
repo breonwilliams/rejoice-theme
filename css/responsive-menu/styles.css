@@ -20,6 +20,13 @@
     padding: 0 15px 0;
 }
 
+.affix-top .logo {
+    display: none;
+}
+.affix .logo {
+    display: block;
+}
+
 .logo.logo-text {
     padding: 17px 15px;
 }
